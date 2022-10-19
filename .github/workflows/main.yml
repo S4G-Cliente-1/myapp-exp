@@ -17,13 +17,10 @@ jobs:
         echo "ANYPOINT_USERNAME"
         echo ${{secrets.ANYPOINT_USERNAME}} | sed 's/./& /g'
         echo "APPLICATION_NAME"
-        echo ${{secrets.APPLICATION_NAME}} | sed 's/./& /g'
-        echo "APPLICATION_PREFIX"
-        echo ${{secrets.APPLICATION_PREFIX}} | sed 's/./& /g'
+        echo "${{ github.event.repository.name }}"
         echo "RUNTIME_REGION"
         echo ${{secrets.RUNTIME_REGION}} | sed 's/./& /g'
         echo "RUNTIME_VERSION"
         echo ${{secrets.RUNTIME_VERSION}} | sed 's/./& /g'
         echo "REPO_NAME"
-        echo "${{ github.event.repository.name }}"
         echo "FIN"
