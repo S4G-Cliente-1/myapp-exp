@@ -48,7 +48,7 @@
 						<muleVersion>${cloudhub.mule.version}</muleVersion>
 						<username>${user.name}</username>
 						<password>${user.password}</password>
-						<applicationName>${app.name}-${api.version}</applicationName>
+						<applicationName>${cloudhub.application.name}-${api.version}</applicationName>
 						<environment>${cloudhub.environment}</environment>
 						<workerType>MICRO</workerType>
 						<properties>
